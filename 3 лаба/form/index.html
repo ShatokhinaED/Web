@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+
+    <form action="submit.php" method="post">
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="feedback">Обратная связь:</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+        <label>Выберите пол:</label>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male"> Мужской
+        </label>
+        <label for="female">
+            <input type="radio" id="female" name="gender" value="female"> Женский
+        </label>
+
+        <label>Виды обратной связи:</label>
+        <label for="topic1">
+            <input type="checkbox" id="Звонок" name="topic[]" value="Звонок"> Звонок
+        </label>
+        <label for="topic2">
+            <input type="checkbox" id="Письменный отзыв" name="topic[]" value="Письменный отзыв"> Письменный отзыв
+        </label>
+        <label for="topic3">
+            <input type="checkbox" id="Техподдержка" name="topic[]" value="Техподдержка"> Техподдержка
+        </label>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+</body>
+</html>

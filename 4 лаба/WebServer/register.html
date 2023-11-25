@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Регистрация</h2>
+        <form action="process_register.php" method="post">
+            <!-- Ваши поля для ввода данных -->
+            <label for="new_username">Новый логин:</label>
+            <input type="text" name="new_username" id="new_username" required>
+            <br>
+            <label for="new_password">Новый пароль:</label>
+            <input type="password" name="new_password" id="new_password" required>
+            <br>
+            <!-- Конец полей для ввода данных -->
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+
+        <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+
+        <!-- Ссылка на главную страницу -->
+        <p><a href="http://127.0.0.1:888/">На главную</a></p>
+    </div>
+</body>
+</html>
